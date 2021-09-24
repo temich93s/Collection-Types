@@ -43,3 +43,11 @@ print("\n//Создание массива, путем объединения д
 var someInt7 = someInt1 + someInt2
 print(someInt7)
 
+
+//MARK: Создание массива через литералы массива
+print("\n//Создание массива через литералы массива")
+
+var someArray1: [String] = ["Hi", "World"]
+var someArray2 = ["Hello", "Universe"]
+print(someArray1, someArray2)
+
