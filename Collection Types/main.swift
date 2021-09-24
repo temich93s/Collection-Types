@@ -28,3 +28,10 @@ print(someInt4)
 someInt4 = []
 print(someInt4)
 
+
+//MARK: Создание массива с дефолтным значением
+print("\n//Создание массива с дефолтным значением")
+
+var someInt5 = Array(repeating: 4, count: 5)
+var someInt6 = Array(repeating: "Hi", count: 3)
+print(someInt5, someInt6)
