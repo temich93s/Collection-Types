@@ -51,3 +51,35 @@ var someArray1: [String] = ["Hi", "World"]
 var someArray2 = ["Hello", "Universe"]
 print(someArray1, someArray2)
 
+
+//MARK: Доступ и изменение массива
+print("\n//Доступ и изменение массива")
+
+print(someArray1.count)
+
+print(someArray1.isEmpty)
+someArray1 = []
+print(someArray1.isEmpty)
+
+someArray1.append("Welcome")
+print(someArray1)
+
+someArray1 += someArray2
+print(someArray1)
+
+print(someArray1[1])
+
+someArray1[1] = "Friend"
+print(someArray1)
+
+someArray1[1...2] = ["One", "Two"]
+print(someArray1)
+
+someArray1.insert("House", at: 1)
+print(someArray1)
+
+print(someArray1.remove(at: 0))
+print(someArray1)
+
+print(someArray1.removeLast())
+print(someArray1)
