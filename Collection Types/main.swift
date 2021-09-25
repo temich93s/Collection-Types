@@ -122,3 +122,23 @@ print(someSet3)
 var someSet4: Set = ["one", "two", "three"]
 print(someSet4)
 
+
+//MARK: Доступ и изменение множества
+print("\n//Доступ и изменение множества")
+
+print(someSet4.count)
+
+print(someSet2.isEmpty)
+print(someSet4.isEmpty)
+
+someSet4.insert("Four")
+print(someSet4)
+
+someSet4.remove("Four")
+print(someSet4)
+
+someSet4.removeAll()
+print(someSet4)
+
+someSet4 = ["one", "two", "three"]
+print(someSet4.contains("two"))
