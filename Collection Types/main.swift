@@ -210,3 +210,10 @@ print(someSet7.isStrictSuperset(of: someSet8)) //true
 print(someSet6.isDisjoint(with: someSet8)) //true
 print(someSet7.isDisjoint(with: someSet8)) //false
 
+
+//MARK: Сокращенный синтаксис словаря
+print("\n//Сокращенный синтаксис словаря")
+
+var SomeDictionary1: Dictionary<Int, String> = [1: "one", 2: "two", 3: "three"]
+var SomeDictionary2 = [1: "one", 2: "two", 3: "three"]
+
