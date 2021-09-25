@@ -260,3 +260,35 @@ print(SomeDictionary5)
 
 SomeDictionary5.removeValue(forKey: "3")
 print(SomeDictionary5)
+
+
+//MARK: Итерация по словарю
+print("\n//Итерация по словарю")
+
+SomeDictionary5 = ["1": "one", "2": "two", "3": "three"]
+
+for (keys, values) in SomeDictionary5 {
+    print("key: \(keys), values: \(values)")
+}
+
+for keys in SomeDictionary5.keys {
+    print("keys: \(keys)")
+}
+
+for values in SomeDictionary5.values {
+    print("values: \(values)")
+}
+
+var keys = [String](SomeDictionary5.keys)
+var values = [String](SomeDictionary5.values)
+
+print(keys)
+print(values)
+
+for keys in SomeDictionary5.keys.sorted() {
+    print("keys: \(keys)")
+}
+
+for values in SomeDictionary5.values.sorted() {
+    print("values: \(values)")
+}
