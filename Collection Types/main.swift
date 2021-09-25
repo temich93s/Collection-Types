@@ -142,3 +142,28 @@ print(someSet4)
 
 someSet4 = ["one", "two", "three"]
 print(someSet4.contains("two"))
+
+
+//MARK: Итерация по множеству
+print("\n//Итерация по множеству")
+
+for i in someSet1 {
+    print("i = \(i)")
+}
+print()
+
+for i in someSet1.sorted() {
+    print("i = \(i)")
+}
+print()
+
+var someSet5: Set = ["a", "b", "c", "d", "e"]
+
+for i in someSet5 {
+    print("i = \(i)")
+}
+print()
+
+for i in someSet5.sorted() {
+    print("i = \(i)")
+}
