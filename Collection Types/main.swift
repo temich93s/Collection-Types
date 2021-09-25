@@ -113,3 +113,12 @@ someSet2 = []
 print(someSet2)
 
 
+//MARK: Создание множества при помощи литерала массива
+print("\n//Создание множества при помощи литерала массива")
+
+var someSet3: Set<String> = ["one", "two", "three"]
+print(someSet3)
+
+var someSet4: Set = ["one", "two", "three"]
+print(someSet4)
+
