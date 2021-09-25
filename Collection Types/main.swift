@@ -217,3 +217,13 @@ print("\n//Сокращенный синтаксис словаря")
 var SomeDictionary1: Dictionary<Int, String> = [1: "one", 2: "two", 3: "three"]
 var SomeDictionary2 = [1: "one", 2: "two", 3: "three"]
 
+//MARK: Создание пустого словаря
+print("\n//Создание пустого словаря")
+
+var SomeDictionary3 = [Int: String]()
+print(SomeDictionary3)
+
+SomeDictionary3[3] = "three"
+print(SomeDictionary3)
+SomeDictionary3 = [:]
+print(SomeDictionary3)
