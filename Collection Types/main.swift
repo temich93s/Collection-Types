@@ -83,3 +83,16 @@ print(someArray1)
 
 print(someArray1.removeLast())
 print(someArray1)
+
+
+//MARK: Итерация по массиву
+print("\n//Итерация по массиву")
+
+for i in someArray1 {
+    print(i, terminator: "! ")
+}
+print()
+
+for (index, value) in someArray1.enumerated() {
+    print("index: \(index), value: \(value)")
+}
