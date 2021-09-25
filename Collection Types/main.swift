@@ -234,3 +234,29 @@ print("\n//Создание словаря с литералом словаря"
 
 var SomeDictionary4: [Int: String] = [1: "one", 2: "two", 3: "three"]
 var SomeDictionary5 = ["1": "one", "2": "two", "3": "three"]
+
+
+//MARK: Доступ и изменение словаря
+print("\n//Доступ и изменение словаря")
+
+print(SomeDictionary5.count)
+
+print(SomeDictionary5.isEmpty)
+
+SomeDictionary5["4"] = "four"
+print(SomeDictionary5)
+
+SomeDictionary5["4"] = "five"
+print(SomeDictionary5)
+
+SomeDictionary5.updateValue("five", forKey: "3")
+print(SomeDictionary5)
+
+var someString = SomeDictionary5["2"] ?? "nil"
+print(someString)
+
+SomeDictionary5["4"] = nil
+print(SomeDictionary5)
+
+SomeDictionary5.removeValue(forKey: "3")
+print(SomeDictionary5)
