@@ -96,3 +96,20 @@ print()
 for (index, value) in someArray1.enumerated() {
     print("index: \(index), value: \(value)")
 }
+
+
+//MARK: Создание и инициализация пустого множества
+print("\n//Создание и инициализация пустого множества")
+
+var someSet1: Set<Int> = [1,2,3,4,5]
+print(someSet1)
+print(someSet1)
+
+var someSet2 = Set<String>()
+print(someSet2)
+
+someSet2.insert("a")
+someSet2 = []
+print(someSet2)
+
+
