@@ -227,3 +227,10 @@ SomeDictionary3[3] = "three"
 print(SomeDictionary3)
 SomeDictionary3 = [:]
 print(SomeDictionary3)
+
+
+//MARK: Создание словаря с литералом словаря
+print("\n//Создание словаря с литералом словаря")
+
+var SomeDictionary4: [Int: String] = [1: "one", 2: "two", 3: "three"]
+var SomeDictionary5 = ["1": "one", "2": "two", "3": "three"]
