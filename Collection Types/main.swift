@@ -179,3 +179,34 @@ print(someSet6.union(someSet7))
 print(someSet6.intersection(someSet7))
 print(someSet6.subtracting(someSet7))
 print(someSet6.symmetricDifference(someSet7))
+
+
+//MARK: Взаимосвязь и равенство множеств
+print("\n//Взаимосвязь и равенство множеств")
+
+var someSet8: Set = [5, 6]
+var someSet9: Set = [5, 6]
+
+//оператор равенства (==) определяет все ли значения двух множеств одинаковы
+print(someSet8 == someSet9) //true
+
+//метод isSubset(of:) определенияет все ли значения множества содержатся в указанном множестве
+print(someSet8.isSubset(of: someSet6)) //false
+print(someSet8.isSubset(of: someSet7)) //true
+
+//метод isSuperset(of:) определяет содержит ли множество все значения указанного множества.
+print(someSet6.isSuperset(of: someSet8)) //false
+print(someSet7.isSuperset(of: someSet8)) //true
+
+//метод isStrictSubset(of:) определяет является ли множество подмножеством, но не равным указанному сету.
+print(someSet8.isStrictSubset(of: someSet6)) //false
+print(someSet8.isStrictSubset(of: someSet7)) //true
+
+//метод isStrictSuperset(of:) определяет является ли множество надмножеством, но не равным указанному сету.
+print(someSet6.isStrictSuperset(of: someSet8)) //false
+print(someSet7.isStrictSuperset(of: someSet8)) //true
+
+//метод isDisjoint(with:) определяет, отсутствуют ли общие значения в двух множествах или нет.
+print(someSet6.isDisjoint(with: someSet8)) //true
+print(someSet7.isDisjoint(with: someSet8)) //false
+
