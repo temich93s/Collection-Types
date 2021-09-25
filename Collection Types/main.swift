@@ -167,3 +167,15 @@ print()
 for i in someSet5.sorted() {
     print("i = \(i)")
 }
+
+
+//MARK: Базовые операции множеств
+print("\n//Базовые операции множеств")
+
+var someSet6: Set = [1, 2, 3, 4]
+var someSet7: Set = [3, 4, 5, 6]
+
+print(someSet6.union(someSet7))
+print(someSet6.intersection(someSet7))
+print(someSet6.subtracting(someSet7))
+print(someSet6.symmetricDifference(someSet7))
